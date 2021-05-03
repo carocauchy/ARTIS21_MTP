@@ -1,0 +1,333 @@
+
+/*Arrière-plan du site*/
+
+	body
+	{
+		background-image:url("PP_trait jaune.png");
+		background-attachment: scroll;
+		background-repeat: no-repeat;
+		background-position: 100px 100px;
+		background-size: 500px;
+	}
+
+/*Visuel des différents titres, sous-titres, listes du site*/
+
+	h1
+	{
+		display: flex;
+		width:40%;
+		margin:auto;
+		justify-content: center;
+		font-family: impact;
+		color: #FECB8B;
+		font-size: 3em;
+		border: 3px #FECB8B solid;
+		border-radius: 20px;
+		box-shadow: 6px 6px 0px #F3E600;
+		transition: 450ms;
+	}
+
+	h2
+	{
+		display: flex;
+		font-family: trebuchet MS;
+		color: #26D07C;
+		font-size: 2em;
+		justify-content: center;
+	}
+
+	h3
+	{
+		font-family: trebuchet MS;
+		color: #F36F36;
+		font-size: 1.7em;
+		text-align: center;
+		text-shadow: 2px 2px #FECB8B;
+	}
+
+	h4
+	{
+		font-family: trebuchet MS;
+		color: #00939A;
+		font-size: 1.3em;
+		padding-left: 10px;
+	}
+
+	p
+	{
+		font-family: verdana;
+		color: white;
+		font-size: 1em;
+		text-align: justify;
+	}
+
+	li
+	{
+		font-family: verdana;
+		color: #F36F36;
+		font-size: 1.3em;
+	}
+
+	mark
+	{
+		font-family: verdana;
+		color: white;
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+
+	a
+	{
+		display: flex;
+		justify-content: center;
+		font-family: impact;
+		color: #00939A;
+		font-size: 1.5em;
+	}
+
+	span
+	{
+		font-weight: bold;
+		color:#F3E600;
+	}
+
+	ul
+	{
+		list-style-type: none;
+	}
+
+	a:link 
+	{ 
+		text-decoration:none; 
+	}
+
+	img
+	{
+		display: flex;
+		align-items: center;
+		margin: auto;
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 50px;
+	}
+
+/*Dynamisme des différentes parties du site*/
+
+	h1:hover
+	{
+		color: white;
+		background-color: #FECB8B;
+		box-shadow: 6px 6px 0px #F36F36;
+	}
+
+	a:hover
+	{
+		color:#F3E600;
+	}
+
+	a:active
+	{
+		color:#FECB8B;
+	}
+
+	.introduction:hover
+	{
+		border-left: solid 3px #26D07C;
+	}
+
+	.interets:hover
+	{
+		box-shadow: 6px 6px 0px #FECB8B;
+		transform: scale(1.02);
+	}
+	.competences:hover
+	{
+		box-shadow: 6px 6px 0px #FECB8B;
+		transform: scale(1.02);
+	}
+	.formation:hover
+	{
+		box-shadow: 6px 6px 0px #FECB8B;
+		transform: scale(1.02);
+	}
+	.experience:hover
+	{
+		box-shadow: 6px 6px 0px #FECB8B;
+		transform: scale(1.02);
+	}
+
+	.projet:hover
+	{
+		box-shadow: 6px 6px 0px #FECB8B;
+		background-color: #26D07C;
+	}
+
+/*Classes utilisées sur le site*/
+
+	.introduction
+	{
+		display:flex;
+		margin: 300px 20% 100px 20%;
+		justify-content: center;
+		text-align:justify;
+		font-family: trebuchet MS;
+		font-weight: bold;
+		color: #F36F36;
+		font-size: 2em;
+	}
+	.formation
+	{
+		width:60%;
+		order:1;
+		background-color: #00939A;
+		margin:10px 10px 10px 10px;
+		border-radius: 10px;
+		padding-right: 20px;
+		min-width: 400px;
+    	transition: transform 450ms, box-shadow 300ms 150ms;
+	}
+	.experience
+	{
+		width:60%;
+		order:3;
+		background-color: #26D07C;
+		margin:10px 10px 10px 10px;
+		border-radius: 10px;
+		padding-right: 20px;
+		min-width: 400px;
+    	transition: transform 450ms, box-shadow 300ms 150ms;
+	}
+	.competences
+	{
+		width:30%;
+		order:2;
+		background-color: #F36F36;
+		margin:10px 10px 10px 10px;
+		border-radius: 10px;
+		padding-right: 20px;
+		min-width: 200px;
+    	transition: transform 450ms, box-shadow 300ms 150ms;
+	}
+	.interets
+	{
+		width:30%;
+		order:4;
+		background-color: #F3E600;
+		margin:10px 10px 10px 10px;
+		border-radius: 10px;
+		padding-right: 20px;
+		min-width: 200px;
+    	transition: transform 450ms, box-shadow 300ms 150ms;
+	}
+
+	.projet
+	{
+		width:25%;
+		background-color: #00939A;
+		margin:10px 10px 10px 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+		min-width: 200px;
+		min-height: 300px;
+		border-radius: 50px;
+		transition: all 450ms;
+	}
+
+	.titre
+	{
+		display: flex;
+		margin: auto;
+		margin-top: 300px;
+		flex-direction: column;
+	}
+
+	.reseaux
+	{
+		width:40%;
+		margin:auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.rando
+	{
+		background-size: cover;
+		position: relative; left:100px; bottom:430px;
+		width: 1000px;
+		height: 700px;
+	}
+
+	.interets mark
+	{
+		background-color: #F3E600;;
+	}
+	.competences mark
+	{
+		background-color: #F36F36;;
+	}
+	.formation mark
+	{
+		background-color: #00939A;;
+	}
+	.experience mark
+	{
+		background-color: #26D07C;;
+	}
+
+/*Id utilisés sur le site*/
+
+	#partiesCV
+	{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+
+	}
+
+	#partiesPROJETS
+	{
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+
+	}
+
+/*Visuel pour la navigation*/
+
+	nav
+	{
+		width:30%;
+		margin:auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+/*Visuel pour le pied de page*/
+	footer
+	{
+		background-color:#FECB8B;
+		width:100%;
+		position: fixed;
+		bottom: 0;
+	}
+
+/*Image responsive*/
+
+	@media screen and (max-width: 810px)
+	{
+		.rando
+		{
+			background-size: cover;
+			position: relative; left:10px; bottom:80px;
+			width: 500px;
+			height: 350px;
+		}
+	}
